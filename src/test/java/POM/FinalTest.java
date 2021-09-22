@@ -7,7 +7,7 @@ import javax.security.auth.login.Configuration;
 public class FinalTest {
 
     @Test
-    public void finalTest() throws InterruptedException {
+    public void finalTest(){
 
         Navigation navigation = new Navigation();
         PageForms pageForms = new PageForms();
@@ -25,11 +25,11 @@ public class FinalTest {
         register.fillLastName();
         register.fillMobileNumber();
         register.fillGender();
-        Thread.sleep(2000);
+
         register.clickSubmit();
 
         submit.checkSubmit();
-        Thread.sleep(2000);
+
         submit.checkName();
         submit.checkMobileNumber();
 
