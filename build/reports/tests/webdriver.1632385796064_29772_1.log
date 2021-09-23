@@ -1,0 +1,177 @@
+[1632385796.275][INFO]: Starting ChromeDriver 93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135}) on port 4382
+[1632385796.275][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1632385796.446][INFO]: [bc99f0a5867d04627b2c898954d99c03] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\Users\\ninja\\IdeaProjects\\designPatterns\\build\\downloads\\1632385795695_29772_1",
+               "plugins.always_open_pdf_externally": true,
+               "profile.default_content_setting_values.automatic_downloads": 1
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage", "--no-sandbox" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\Users\\ninja\\IdeaProjects\\designPatterns\\build\\downloads\\1632385795695_29772_1",
+            "plugins.always_open_pdf_externally": true,
+            "profile.default_content_setting_values.automatic_downloads": 1
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1632385796.485][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\Users\\ninja\\IdeaProjects\\designPatterns\\build\\downloads\\1632385795695_29772_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "automatic_downloads": 1,
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1632385796.485][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1632385796.486][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\ninja\AppData\Local\Temp\scoped_dir2708_266129014" data:,
+[1632385796.931][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1632385796.932][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1632385796.936][INFO]: [bc99f0a5867d04627b2c898954d99c03] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "93.0.4577.82",
+      "chrome": {
+         "chromedriverVersion": "93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135})",
+         "userDataDir": "C:\\Users\\ninja\\AppData\\Local\\Temp\\scoped_dir2708_266129014"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:51549"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "bc99f0a5867d04627b2c898954d99c03"
+}
+[1632385796.970][INFO]: [bc99f0a5867d04627b2c898954d99c03] COMMAND MaximizeWindow {
+
+}
+[1632385796.970][INFO]: Waiting for pending navigations...
+[1632385796.971][INFO]: Done waiting for pending navigations. Status: ok
+[1632385797.084][INFO]: Waiting for pending navigations...
+[1632385797.085][INFO]: Done waiting for pending navigations. Status: ok
+[1632385797.085][INFO]: [bc99f0a5867d04627b2c898954d99c03] RESPONSE MaximizeWindow {
+   "height": 1056,
+   "width": 1936,
+   "x": -8,
+   "y": -8
+}
+[1632385797.088][INFO]: [bc99f0a5867d04627b2c898954d99c03] COMMAND SetTimeouts {
+   "pageLoad": 30000
+}
+[1632385797.088][INFO]: [bc99f0a5867d04627b2c898954d99c03] RESPONSE SetTimeouts
+[1632385797.093][INFO]: [bc99f0a5867d04627b2c898954d99c03] COMMAND Navigate {
+   "url": "https://demoqa.com/"
+}
+[1632385797.093][INFO]: Waiting for pending navigations...
+[1632385797.093][INFO]: Done waiting for pending navigations. Status: ok
+[1632385797.384][INFO]: Waiting for pending navigations...
+[1632385798.986][INFO]: Done waiting for pending navigations. Status: ok
+[1632385798.986][INFO]: [bc99f0a5867d04627b2c898954d99c03] RESPONSE Navigate
+[1632385798.992][INFO]: [bc99f0a5867d04627b2c898954d99c03] COMMAND Quit {
+
+}
+[1632385799.015][INFO]: [bc99f0a5867d04627b2c898954d99c03] RESPONSE Quit

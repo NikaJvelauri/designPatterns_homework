@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class test {
+public class PageFormsTest {
     private WebDriver driver;
 
     //Page URL
@@ -19,10 +19,10 @@ public class test {
     private WebElement developerApplyButton;
 
     //Constructor
-    public test(WebDriver driver){
+    public PageFormsTest(WebDriver driver){
 
         this.driver=driver;
-        driver.get(PAGE_URL);
+//        driver.get(PAGE_URL);
         //Initialise Elements
         PageFactory.initElements(driver, this);
     }

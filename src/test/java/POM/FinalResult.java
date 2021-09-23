@@ -14,7 +14,7 @@ import TestPackage.RegistrationFormsTest;
 
 import java.util.concurrent.TimeUnit;
 
-public class PageForms{
+public class FinalResult {
     WebDriver driver;
 
 

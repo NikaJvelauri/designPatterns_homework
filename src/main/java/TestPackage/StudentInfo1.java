@@ -1,8 +1,8 @@
-package POM;
+package TestPackage;
 
-public class StudentInfo {
+public class StudentInfo1 {
     String Name = "Nika";
     String lastName1 = "Jvelauri";
-    String fullName = Name + " " + lastName1;
-    String mobileNumber1 = "0123456789";
+    public String fullName = Name + " " + lastName1;
+    public String mobileNumber1 = "0123456789";
 }
