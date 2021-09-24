@@ -1,5 +1,6 @@
 package TestPackage;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,19 +43,19 @@ public class RegistrationFormsTest extends StudentInfo1 {
         //Initialise Elements
         PageFactory.initElements(driver, this);
     }
-
-    public RegistrationFormsTest fillStudentName(){
-        fillfirstName.sendKeys(Name);
+    @Step("Register with user name: {0}")
+    public RegistrationFormsTest fillStudentName(String StudentName){
+        fillfirstName.sendKeys(StudentName);
         return this;
     }
-
-    public RegistrationFormsTest fillStudentLastName(){
-        fillLastName.sendKeys(lastName1);
+    @Step("Register with last name: {0}")
+    public RegistrationFormsTest fillStudentLastName(String StudentLastName){
+        fillLastName.sendKeys(StudentLastName);
         return this;
     }
-
-    public RegistrationFormsTest fillNumber(){
-        fillMobileNumber.sendKeys(mobileNumber1);
+    @Step("Student Mobile Phone: {0}")
+    public RegistrationFormsTest fillNumber(String phone){
+        fillMobileNumber.sendKeys(phone);
         return this;
     }
 

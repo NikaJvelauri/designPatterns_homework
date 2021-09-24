@@ -59,7 +59,7 @@ public class FinalResult {
     @Severity(SeverityLevel.NORMAL)
     public void register(){
         RegistrationFormsTest register = new RegistrationFormsTest(driver);
-        register.fillStudentName().fillStudentLastName().fillNumber().gender();
+        register.fillStudentName("Nika").fillStudentLastName("Jvelauri").fillNumber("0123456789").gender();
 
     }
     @Step("This is step 4")
