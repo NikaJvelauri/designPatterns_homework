@@ -5,8 +5,12 @@ import TestPackage.PracticeFormsTest;
 import TestPackage.SubmitTestTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+import io.qameta.allure.*;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 import TestPackage.PageFormsTest;
 import TestPackage.RegistrationFormsTest;
@@ -14,14 +18,15 @@ import TestPackage.RegistrationFormsTest;
 
 import java.util.concurrent.TimeUnit;
 
+@Epic("Homework")
+@Feature("Registering")
 public class FinalResult {
     WebDriver driver;
 
 
 
     @BeforeClass
-    public void setup(){
-        //use FF Driver
+    public void setup() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -29,34 +34,57 @@ public class FinalResult {
         driver.manage().window().maximize();
     }
 
-    @Test
-    public void goToPageForms(){
-
-
-
+    @Story("goToPageForms")
+    @Step("This is step 1")
+    @Test(priority = 1, description = "Going into page forms")
+    @Description("Going into page forms")
+    @Severity(SeverityLevel.NORMAL)
+    public void goToPageForms()  {
         PageFormsTest pageFormsTest = new PageFormsTest(driver);
-        PracticeFormsTest practiceForms = new PracticeFormsTest(driver);
-
-        RegistrationFormsTest register = new RegistrationFormsTest(driver);
-        SubmitTestTest submit = new SubmitTestTest(driver);
-
-
-
         pageFormsTest.clickOnDeveloperApplyButton();
-
-
+    }
+    @Step("This is step 2")
+    @Description("Going into practice forms")
+    @Test(priority = 2,description = "Going into practice forms")
+    @Story("practiceForm")
+    @Severity(SeverityLevel.NORMAL)
+    public void practiceForm() {
+        PracticeFormsTest practiceForms = new PracticeFormsTest(driver);
         practiceForms.clickOnPracticeForm();
-
-
-//        //Fluent API (methods can be chained together to form a single statement)
+    }
+    @Step("This is step 3")
+    @Description("Filling information")
+    @Test(priority = 3, description = "Filling information")
+    @Story("register")
+    @Severity(SeverityLevel.NORMAL)
+    public void register(){
+        RegistrationFormsTest register = new RegistrationFormsTest(driver);
         register.fillStudentName().fillStudentLastName().fillNumber().gender();
 
-
+    }
+    @Step("This is step 4")
+    @Description("Submitting")
+    @Test(priority = 4, description = "Submitting")
+    @Story("submit")
+    @Severity(SeverityLevel.NORMAL)
+    public void submit(){
+        RegistrationFormsTest register = new RegistrationFormsTest(driver);
         register.submit();
 
-        submit.checkSubmit().checkName().checkMobileNumber();
-
     }
+
+
+    @Step("This is step 4")
+    @Test(priority = 5, description = "checking information")
+    @Story("check")
+    @Description("checking information")
+    @Severity(SeverityLevel.NORMAL)
+    public void check() {
+        SubmitTestTest submit = new SubmitTestTest(driver);
+        submit.checkSubmit().checkName().checkMobileNumber();
+    }
+
+
 
 
 
