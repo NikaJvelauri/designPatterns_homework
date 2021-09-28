@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Failed Tests",
+    "matchedStatuses": ["failed"],
+    "traceRegex": ".*ElementClickInterceptedException.*"
+  },
+  {
+    "name": "Skipped tests",
+    "matchedStatuses": ["skipped"],
+    "traceRegex": ".*skipException.*"
+  },
+  {
+    "name": "Broken tests",
+    "matchedStatuses": ["broken"]
+  }
+]

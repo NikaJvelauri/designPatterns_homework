@@ -66,7 +66,7 @@ public class RegistrationFormsTest extends StudentInfo1 {
 
     public void submit(){
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,1000)");
+        js.executeScript("window.scrollBy(0,1000)");   //amit vafeilebt rom daematos kategoriashi
         clickSubmit.click();
     }
 }
